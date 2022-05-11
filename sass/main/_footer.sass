@@ -1,0 +1,62 @@
+.footer
+    padding-top: 50px
+    background-color: $text
+    &__top
+        display: flex
+        align-items: center
+        flex-direction: column
+    &__bot
+        margin-top: 50px
+        border-top: 1px solid $grayDark
+        padding: 22px 0px
+        display: flex
+        justify-content: space-between
+        &-rights
+            color: $grayLight
+            font-weight: 400
+            font-size: 20px
+            line-height: 100%
+        &-links
+            display: flex
+            justify-content: space-between
+            width: 110px
+            &-icon
+                color: $grayLight
+                transition: 0.2s
+                &:hover
+                    color: $main
+                    transition: 0.2s
+                    transform: scale(1.4)
+            &-ahref
+                padding: 2px
+                
+    &__block
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &-logo
+        &-links
+            margin-top: 35px
+            display: flex
+            width: 500px
+            justify-content: space-between
+            height: fit-content
+            &-link
+                &-ahref
+                    transition: 0.3s
+                    font-weight: 400
+                    font-size: 20px
+                    color: #fff
+                    &:hover
+                        transition: 0.3s
+                        color: $main
+                &-span
+                    font-weight: 300
+                    font-size: 18px
+                    color: #fff !important
+                    pointer-events: none
+        &-right
+            display: flex
+            align-items: center
+            justify-content: right
+            width: 197px

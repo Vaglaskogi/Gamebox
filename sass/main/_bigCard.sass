@@ -1,0 +1,62 @@
+.bigCard
+    display: flex
+    &__right
+        min-width: 928px
+    &__left
+        display: flex
+        flex-direction: column
+        justify-content: center
+        margin-right: 32px
+        &-ahref
+            margin-bottom: 30px
+            &-h1
+                &:hover
+                    transition: 0.2s
+                    color: $main
+        &-text
+            font-size: 24px
+            color: $grayDark
+            margin-bottom: 60px
+        &-author
+            line-height: 100%
+            font-weight: 500
+            font-size: 18px
+            &-ahref
+                color: $main
+                &:hover
+                    transition: 0.2s
+                    color: $grayDark
+        &__tagBlock
+            display: flex
+            &-tag
+                text-transform: uppercase
+                font-weight: 700
+                font-size: 20px
+                line-height: 100%
+                margin-right: 18px
+                color: $main
+                &:hover
+                    transition: 0.2s
+                    color: $grayDark
+    &__rightImage
+        object-fit: cover
+        max-width: 928px
+        max-height: 600px
+        min-height: 600px
+    &__rightBlock
+        position: relative
+        &-rating
+            position: absolute
+            top: 568px
+            left: 866px
+            display: flex
+            align-items: center
+            justify-content: center
+            background: $main
+            width: 62px
+            height: 32px
+            &-text
+                color: #fff
+                font-size: 24px
+                line-height: 100%
+                font-weight: 700

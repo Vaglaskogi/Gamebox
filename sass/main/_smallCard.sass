@@ -1,0 +1,143 @@
+.smallCards
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr 1fr
+    grid-gap: 32px
+    &__card
+        max-width: 352px
+        &-img
+            max-width: 352px
+            max-height: 180px
+            min-height: 180px
+            object-fit: cover
+        &-imgBlock
+            position: relative
+            display: flex
+            justify-content: end
+            align-items: end
+        &-rating
+            position: absolute
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 48px
+            height: 24px
+            background: $main
+            &-text
+                color: #fff
+                font-weight: 700
+                line-height: 100%
+                font-size: 18px
+        &-tagsBlock
+            display: flex
+            justify-content: space-between
+            width: fit-content
+            align-items: center
+            margin-bottom: 10px
+            margin-top: 15px
+            &-icon
+                max-width: 18px
+                margin-right: 8px
+        &-tag
+            color: $main
+            font-weight: 700
+            line-height: 100%
+            text-transform: uppercase
+            margin-right: 10px
+            width: fit-content
+            &:hover
+                transition: 0.2s
+                color: $grayDark
+        &-h2
+            &:hover
+                transition: 0.2s
+                color: $main
+        &-text
+            font-size: 18px
+            color: $grayDark
+            margin-top: 10px
+            min-height: 90px
+            display: -webkit-box
+            -webkit-line-clamp: 4
+            -webkit-box-orient: vertical
+            overflow: hidden
+        &-author
+            font-weight: 500
+            margin-top: 20px
+            &-ahref
+                color: $main
+                &:hover
+                    transition: 0.2s
+                    color: $grayDark
+
+.smallCards
+    &-splide
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr 1fr
+        grid-gap: 32px
+        &__card
+            max-width: 352px
+            &-img
+                max-width: 352px
+                max-height: 180px
+                min-height: 180px
+                object-fit: cover
+            &-imgBlock
+                position: relative
+                display: flex
+                justify-content: end
+                align-items: end
+            &-rating
+                position: absolute
+                display: flex
+                justify-content: center
+                align-items: center
+                width: 48px
+                height: 24px
+                background: $main
+                &-text
+                    color: #fff
+                    font-weight: 700
+                    line-height: 100%
+                    font-size: 18px
+            &-tagsBlock
+                display: flex
+                justify-content: space-between
+                width: fit-content
+                align-items: center
+                margin-bottom: 10px
+                margin-top: 15px
+                &-icon
+                    max-width: 18px
+                    margin-right: 8px
+            &-tag
+                color: $main
+                font-weight: 700
+                line-height: 100%
+                text-transform: uppercase
+                margin-right: 10px
+                width: fit-content
+                &:hover
+                    transition: 0.2s
+                    color: $grayDark
+            &-h2
+                &:hover
+                    transition: 0.2s
+                    color: $main
+            &-text
+                font-size: 18px
+                color: $grayDark
+                margin-top: 10px
+                min-height: 90px
+                display: -webkit-box
+                -webkit-line-clamp: 4
+                -webkit-box-orient: vertical
+                overflow: hidden
+            &-author
+                font-weight: 500
+                margin-top: 20px
+                &-ahref
+                    color: $main
+                    &:hover
+                        transition: 0.2s
+                        color: $grayDark
+        

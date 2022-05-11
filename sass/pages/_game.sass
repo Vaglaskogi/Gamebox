@@ -1,0 +1,96 @@
+.game
+    &__head
+        position: relative
+        display: flex
+        justify-content: center
+        align-items: end
+        &-img
+            max-height: 600px
+            object-fit: cover
+        &-tag
+            background: $main
+            padding: 10px
+            width: fit-content
+            position: absolute
+            &-text
+                font-weight: 700
+                font-size: 18px
+                line-height: 100%
+                text-transform: uppercase
+                color: #fff
+        &-tagLeft
+            right: 0%
+        &-tagRight
+            left: 0%
+    &__h1
+        text-align: center
+        margin-top: 25px
+        padding-bottom: 25px
+        width: 100% !important
+        border-bottom: 1px solid $grayLight
+    &__contentBlock
+        display: flex
+        flex-direction: column
+        align-items: center
+        &-category
+            display: flex
+            justify-content: space-between
+            width: 100%
+            max-width: 736px
+            padding: 30px 20px
+            border-bottom: 1px solid $grayLight
+            margin-bottom: 30px
+            &-left
+                display: flex
+                flex-direction: column
+            &-right
+                display: flex
+                flex-direction: column
+            &-text
+                font-weight: 400
+                margin-bottom: 15px
+                font-size: 18px
+                line-height: 100%
+        &-contentText
+            width: 100%
+            max-width: 736px
+            font-weight: 400
+            font-size: 18px
+            line-height: 140%
+            margin-bottom: 30px
+        &-site
+            width: 100%
+            max-width: 736px
+            font-weight: 500
+            font-size: 18px
+            line-height: 120%
+            margin-bottom: 40px
+            &-ahref
+                font-weight: 400
+                color: $main
+                text-decoration: underline
+                &:hover
+                    transition: 0.2s
+                    color: $grayDark
+        &-video
+            max-width: 736px
+            width: 100%
+            height: 414px
+        &-whereBuy
+            margin-top: 40px
+            &-logoBlock
+                margin-top: 40px
+                display: grid
+                grid-template-columns: 1fr 1fr 1fr
+                align-items: center
+                grid-gap: 30px
+                &-logo
+                    width: 160px
+                    fill: $text
+                    transition: 0.2s
+                    &:hover
+                        fill: $main
+                        transition: 0.2s
+
+.game__contentBlock-category-text:last-child
+    margin-bottom: 0
