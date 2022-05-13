@@ -692,7 +692,7 @@ input:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 110px;
+  width: 130px;
 }
 
 .footer__bot-links-icon {
@@ -2017,7 +2017,7 @@ input:focus {
   display: -ms-flexbox;
   display: flex;
   background: #fff;
-  padding: 60px 0px 30px 90px;
+  padding: 60px 90px 30px 90px;
   margin-top: 160px;
 }
 
@@ -2423,6 +2423,7 @@ input:focus {
         -ms-flex-align: center;
             align-items: center;
     padding-bottom: 0;
+    padding-right: 0;
   }
   .author__mainContent-right {
     margin-left: 0;
