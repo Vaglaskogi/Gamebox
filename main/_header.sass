@@ -1,0 +1,65 @@
+.header
+    padding: 20px 0px
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1)
+    position: fixed
+    z-index: 2
+    background: #fff
+    width: 100%
+    top: 0px
+    left: 0px
+    &__content
+        display: flex
+        width: 100%
+        max-width: 1002px
+        justify-content: space-between
+        align-items: center
+        z-index: 1
+    &__burger
+        display: none
+        cursor: pointer
+    &__block
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &-logo
+            width: 197px !important
+            height: 41px !important
+        &-links
+            display: flex
+            min-width: 500px
+            justify-content: space-between
+            height: fit-content
+            
+            &-link
+                &-ahref
+                    transition: 0.3s
+                    font-weight: 400
+                    font-size: 20px
+                    &:hover
+                        transition: 0.3s
+                        color: $main
+                &-span
+                    font-weight: 300
+                    font-size: 18px
+                    pointer-events: none
+        &-right
+            display: flex
+            align-items: center
+            justify-content: right
+            width: 197px
+            &-searchIcon
+                &:hover
+                    color: $main
+                    transition: 0.2s
+
+
+
+.header:before
+    contain: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: red
+    z-index: 1

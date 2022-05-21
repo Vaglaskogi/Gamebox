@@ -1,0 +1,368 @@
+// Для стрелок слайдера
+@media (max-width: 1620px)
+    .splide__arrow--prev
+        left: 0em !important
+        background: linear-gradient(to right, $text, transparent) !important
+    .splide__arrow--next
+        right: 0em !important
+        background: linear-gradient(to left, $text, transparent) !important
+    .splide__arrow
+        opacity: 0.6 !important
+
+// По контейнеру
+@media (max-width: 1505px)
+    .container
+        max-width: 1000px
+
+    .bigCard__rightImage
+        min-height: 100%
+        max-height: 500px
+    .bigVideo
+        min-width: 100%
+        min-height: 45vh !important
+        max-height: 450px !important
+    .header__content
+        max-width: 730px
+
+    .btn-search:focus ~ .input-search
+      width: 150px
+
+    .bigCard__left__tagBlock
+        justify-content: center
+    
+    .airLeft
+        margin-left: 0
+    
+    .bigCard
+        flex-direction: column-reverse
+        align-items: center
+        &__left
+            margin: 0
+            margin-top: 15px
+            text-align: center
+            &-ahref
+                margin-bottom: 20px
+            &-text
+                margin-bottom: 30px
+        &__right
+            min-width: 100%
+        &__rightImage
+            max-width: 100%
+
+    .smallCards
+        grid-template-columns: 1fr 1fr 1fr
+
+    .devices__cards
+        grid-template-columns: 1fr 1fr 1fr
+    
+    .guides__cards
+        grid-template-columns: 1fr 1fr 1fr
+
+    .smallCards__card:last-child
+        display: none
+    
+
+    .games__block
+        flex-direction: column
+        &-right
+            margin-top: 50px
+            grid-template-columns: 1fr 1fr 1fr
+            grid-template-rows: 0fr
+    
+    .mediumCard
+        max-width: 100%
+        &__img
+            max-width: 100%
+
+    .video__block
+        flex-direction: column-reverse
+        &-left
+            margin-top: 50px
+            grid-template-columns: 1fr 1fr 1fr
+            grid-template-rows: 0fr
+
+@media (max-width: 1000px)
+    .container
+        width: 95%
+    
+    .airtop
+        margin-top: 83.5px
+    
+    .smallCards__card:nth-last-child(3)
+        display: none
+
+    .smallCards__card
+        max-width: 100%
+
+    .smallCards__card-img
+        max-width: 100%
+
+    .smallCards
+        grid-template-columns: 1fr 1fr
+
+    .devices__cards
+        grid-template-columns: 1fr 1fr 
+    
+    .guides__cards
+        grid-template-columns: 1fr 1fr
+
+    .video__block-left
+            grid-template-columns: 1fr 1fr
+
+    .games__block-right
+            grid-template-columns: 1fr 1fr
+
+    .header__block
+        max-height: 100% !important
+
+
+
+    .header__burger
+        position: relative
+        display: block
+        width: 30px
+        height: 20px
+        z-index: 3
+
+    .header__content
+        border-top: 1px solid $grayLight
+        position: fixed
+        top: 83.5px
+        right: -100%
+        width: 60%
+        height: 100%
+        background: #ffffff
+        display: flex
+        flex-direction: column
+        justify-content: start
+        align-items: end
+        padding-bottom: 83.5px
+        padding-right: 30px
+        padding-top: 30px
+        padding-left: 30px
+        transition: all 0.3s ease 0s
+
+    .header__block-links-link-ahref
+        font-size: 24px
+        
+    
+    .header__content.activeMenu
+        right: 0px
+        transition: all 0.4s ease 0s
+
+    .header__block-links
+        flex-direction: column
+        align-items: end
+        height: 250px !important
+        
+
+    .header__block-right
+        padding-top: 15px
+        margin-top: 15px
+        width: 100%
+        border-top: 1px solid $grayLight
+
+    .header__block-links-link-span
+        display: none
+
+    .header__burger span
+        position: absolute
+        content: ''
+        background: $text
+        width: 100%
+        height: 2px
+        top: 9px
+        transition: all 0.3s ease 0s
+
+    .header__burger:before, .header__burger:after
+        position: absolute
+        content: ''
+        background: $text
+        width: 100%
+        height: 2px
+        transition: all 0.4s ease 0s
+
+    .header__burger:before
+        top: 0px
+    .header__burger:after 
+        bottom: 0px
+
+    .header__burger.activeMenu:before
+        transform: rotate(45deg)
+        top: 9px 
+    
+    .header__burger.activeMenu:after
+        transform: rotate(-45deg)
+        bottom: 9px
+
+    .header__burger.activeMenu span
+        display: none
+
+    .header__block-logo
+        position: relative
+        z-index: 3
+
+    body.lock
+        overflow: hidden
+
+    .header__block-links
+        min-width: fit-content !important
+
+@media (max-width: 800px)
+    .bigCard__left-ahref-h1
+        font-size: 48px
+    .article__h1
+        font-size: 48px
+    .bigCard__left-text
+        font-size: 18px
+
+    .sortBlock
+        flex-direction: column
+        &__left
+            margin-bottom: 15px   
+
+    .pageCard__img
+        min-width: 260px  
+
+    .author
+        &__mainContent
+            height: fit-content
+            &-bg
+                height: 730px
+            &-block
+                flex-direction: column 
+                padding-left: 0px
+                align-items: center
+                padding-bottom: 0
+                padding-right: 0
+            &-right
+                margin-left: 0
+                margin-top: 20px
+                height: fit-content
+                text-align: center
+                align-items: center
+                display: flex
+                flex-direction: column
+                &-h2
+                    width: 100% !important
+                &-text
+                    width: 100%
+                &-bot
+                    flex-direction: column
+                    &-links
+                        margin-bottom: 10px
+
+    .article__gradeBlock-left
+        flex-direction: column
+    
+    .article__gradeBlock-goodBad
+        margin-bottom: 30px
+
+@media (max-width: 650px)
+    .air
+        margin-bottom: 65px
+
+    .pageCard
+        flex-direction: column
+        &__right
+            margin-left: 0
+            margin-top: 30px
+        &__img
+            max-width: 100%
+
+@media (max-width: 600px)        
+       
+
+    .footer__bot
+        flex-direction: column-reverse
+    
+    .footer
+        &__top
+            align-items: start
+        &__block
+            &-links
+                flex-direction: column
+                height: 230px
+                &-link
+                    &-span
+                        display: none
+
+    .footer__bot-links
+        margin-bottom: 15px
+    
+    .footer__top
+
+    .footer__bot-rights
+        font-size: 18px
+
+@media (max-width: 570px)
+    .game__contentBlock-category
+        flex-direction: column
+    .game__contentBlock-category-left
+        margin-bottom: 15px
+    .game__contentBlock-whereBuy-logoBlock
+        grid-template-columns: 1fr 1fr
+    .article__authorBlock
+        flex-direction: column
+    .article__authorBlock-right
+        border-left: 0px
+        margin-left: 0px
+        padding-left: 0px
+        text-align: center
+    .article__authorBlock-right
+        margin-top: 15px
+        display: flex
+        flex-direction: column
+        align-items: center
+    .article__gradeBlock
+        flex-direction: column
+        align-items: center
+    .article__gradeBlock-left
+        margin-bottom: 30px
+        align-items: center
+    .article__gradeBlock-left
+        width: 100%
+    
+@media (max-width: 500px)
+    .sortBlock__left
+        flex-direction: column
+        margin-bottom: 30px
+    
+    .sortBlock__left-button
+        margin-right: 0px
+        margin-bottom: 15px
+    
+    .sortBlock__left-button:last-child
+        margin-bottom: 0
+
+    .sortBlock__left-sortBy
+        margin-right: 0
+        font-size: 20px
+        margin-bottom: 20px
+
+    .smallCards__card:nth-last-child(2)
+        display: none
+    .smallCards
+        grid-template-columns: 1fr
+    
+    .devices__cards
+        grid-template-columns: 1fr 
+    
+    .guides__cards
+        grid-template-columns: 1fr
+
+    .video__block-left
+            grid-template-columns: 1fr 
+
+    .games__block-right
+            grid-template-columns: 1fr 
+
+@media (max-width: 370px)
+    .game__contentBlock-whereBuy-logoBlock
+        grid-template-columns: 1fr
+    .bigCard__left-ahref-h1
+        font-size: 42px
+
+@media (max-width: 513px)
+    .header
+        width: 100% !important
