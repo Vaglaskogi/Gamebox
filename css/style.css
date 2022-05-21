@@ -860,12 +860,19 @@ input:focus {
 
 .bigCard__rightBlock {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
 }
 
 .bigCard__rightBlock-rating {
   position: absolute;
-  top: 568px;
-  left: 866px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2626,6 +2633,9 @@ input:focus {
   .game__contentBlock-whereBuy-logoBlock {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+  .bigCard__left-ahref-h1 {
+    font-size: 42px;
   }
 }
 
